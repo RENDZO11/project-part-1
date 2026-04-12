@@ -15,7 +15,7 @@ public class Registration_and_login {
     private String password;
     private String cellPhoneNumber;
     
-     // Constructor
+     //Constructor
     public Registration_and_login(String firstName, String lastName, String userName, String password, String cellPhoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -29,7 +29,7 @@ public class Registration_and_login {
         return userName.contains("_") && userName.length() <= 5;
     }
     
-       // Password: 8+ chars, capital letter, number, special character
+       // Password: 8+characters, capital,letter,number,srecial character
     public boolean checkPasswordComplexity() {
         String regex = "^(?=.*[A-Z])(?=.*\\d)(?=.*[^a-zA-Z0-9]).{8,}$";
         return password.matches(regex);
