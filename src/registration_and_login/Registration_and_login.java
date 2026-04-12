@@ -15,7 +15,7 @@ public class Registration_and_login {
     private String password;
     private String cellPhoneNumber;
     
-     // Costructor
+     // Constructor
     public Registration_and_login(String firstName, String lastName, String userName, String password, String cellPhoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
